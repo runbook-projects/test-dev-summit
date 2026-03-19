@@ -1,0 +1,230 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Test Dev Summit - A developer conference focused on modern tooling and AI-assisted workflows.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | Test Dev Summit</title>
+    <style is:global>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --color-primary: #2563eb;
+        --color-primary-dark: #1e40af;
+        --color-secondary: #7c3aed;
+        --color-text: #1f2937;
+        --color-text-light: #6b7280;
+        --color-bg: #ffffff;
+        --color-bg-light: #f9fafb;
+        --color-border: #e5e7eb;
+        --spacing-xs: 0.5rem;
+        --spacing-sm: 1rem;
+        --spacing-md: 1.5rem;
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+        --spacing-2xl: 4rem;
+        --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-sans);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--color-primary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--color-primary-dark);
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        border-radius: 0.375rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-weight: 600;
+        transition: all 0.2s ease;
+      }
+
+      .btn-primary {
+        background-color: var(--color-primary);
+        color: white;
+      }
+
+      .btn-primary:hover {
+        background-color: var(--color-primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        color: var(--color-primary);
+        border: 2px solid var(--color-primary);
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--color-primary);
+        color: white;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: var(--spacing-md);
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin-bottom: var(--spacing-md);
+        color: var(--color-text-light);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 var(--spacing-md);
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="/test-dev-summit/" class="logo">Test Dev Summit</a>
+          <ul class="nav-links">
+            <li><a href="/test-dev-summit/#about">About</a></li>
+            <li><a href="/test-dev-summit/#schedule">Schedule</a></li>
+            <li><a href="/test-dev-summit/#venue">Venue</a></li>
+            <li><a href="/test-dev-summit/#register">Register</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Test Dev Summit. All rights reserved.</p>
+        <p>A developer conference focused on modern tooling and AI-assisted workflows.</p>
+      </div>
+    </footer>
+
+    <style>
+      .header {
+        background-color: var(--color-bg);
+        border-bottom: 1px solid var(--color-border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar {
+        padding: var(--spacing-md) 0;
+      }
+
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-lg);
+      }
+
+      .nav-links a {
+        font-weight: 500;
+        color: var(--color-text);
+      }
+
+      .nav-links a:hover {
+        color: var(--color-primary);
+      }
+
+      .footer {
+        background-color: var(--color-bg-light);
+        border-top: 1px solid var(--color-border);
+        padding: var(--spacing-2xl) 0;
+        margin-top: var(--spacing-2xl);
+        text-align: center;
+      }
+
+      .footer p {
+        margin-bottom: var(--spacing-sm);
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: var(--spacing-md);
+          font-size: 0.9rem;
+        }
+
+        .logo {
+          font-size: 1.25rem;
+        }
+      }
+    </style>
+  </body>
+</html>
