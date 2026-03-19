@@ -1,0 +1,15 @@
+{
+  "name": "test-dev-summit",
+  "version": "1.0.0",
+  "description": "A developer conference focused on modern tooling and AI-assisted workflows.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.0.0"
+  },
+  "devDependencies": {}
+}

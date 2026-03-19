@@ -1,0 +1,421 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home">
+  <section class="hero">
+    <div class="hero-content">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h1>Test Dev Summit</h1>
+          <p class="hero-subtitle">A developer conference focused on modern tooling and AI-assisted workflows.</p>
+          <div class="hero-buttons">
+            <button class="btn-primary">Register Now</button>
+            <button class="btn-secondary">Learn More</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="/test-dev-summit/assets/event-image-1.png" alt="Test Dev Summit Hero Banner" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About the Summit</h2>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Modern Tooling</h3>
+          <p>Explore the latest development tools and frameworks that are shaping the future of web development. Learn from industry experts about best practices and emerging technologies.</p>
+        </div>
+        <div class="about-card">
+          <h3>AI-Assisted Workflows</h3>
+          <p>Discover how artificial intelligence is transforming developer workflows. From code generation to debugging, see how AI can boost your productivity and code quality.</p>
+        </div>
+        <div class="about-card">
+          <h3>Networking Opportunities</h3>
+          <p>Connect with fellow developers, share experiences, and build lasting relationships with professionals from around the world in the tech industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="schedule" class="schedule">
+    <div class="container">
+      <h2>Event Schedule</h2>
+      <div class="schedule-grid">
+        <div class="schedule-item">
+          <div class="time">09:00 AM</div>
+          <div class="event-details">
+            <h3>Opening Keynote</h3>
+            <p>Welcome address and overview of the summit agenda.</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time">10:30 AM</div>
+          <div class="event-details">
+            <h3>Modern Tooling Panel</h3>
+            <p>Industry leaders discuss the latest development tools and frameworks.</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time">12:00 PM</div>
+          <div class="event-details">
+            <h3>Lunch Break</h3>
+            <p>Network with fellow attendees and enjoy refreshments.</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time">01:00 PM</div>
+          <div class="event-details">
+            <h3>AI-Assisted Workflows Workshop</h3>
+            <p>Hands-on workshop exploring AI tools for developers.</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time">03:00 PM</div>
+          <div class="event-details">
+            <h3>Coffee Break</h3>
+            <p>Networking and informal discussions.</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="time">03:30 PM</div>
+          <div class="event-details">
+            <h3>Closing Remarks</h3>
+            <p>Summary and announcements for next year's summit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="venue" class="venue">
+    <div class="container">
+      <h2>Venue Information</h2>
+      <div class="venue-grid">
+        <div class="venue-info">
+          <h3>Location</h3>
+          <p>The summit will be held at a premier conference center in the heart of the tech district, easily accessible by public transportation and with ample parking available.</p>
+          <h3 style="margin-top: var(--spacing-lg);">Amenities</h3>
+          <ul class="amenities-list">
+            <li>High-speed WiFi throughout the venue</li>
+            <li>Multiple breakout rooms for workshops</li>
+            <li>Complimentary refreshments and meals</li>
+            <li>Accessible facilities and accommodations</li>
+            <li>On-site parking available</li>
+          </ul>
+        </div>
+        <div class="venue-map">
+          <div class="map-placeholder">
+            <p>📍 Venue Map</p>
+            <p style="font-size: 0.9rem; margin-top: var(--spacing-md);">Interactive map coming soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="register" class="register">
+    <div class="container">
+      <h2>Register for the Summit</h2>
+      <p class="register-intro">Secure your spot at Test Dev Summit today. Early bird tickets are available at a special rate.</p>
+      <div class="ticket-grid">
+        <div class="ticket-card">
+          <h3>Early Bird</h3>
+          <div class="price">$99</div>
+          <p class="ticket-desc">Limited availability</p>
+          <ul class="ticket-features">
+            <li>✓ Full day access</li>
+            <li>✓ All workshops</li>
+            <li>✓ Lunch included</li>
+            <li>✓ Networking events</li>
+          </ul>
+          <button class="btn-primary">Get Early Bird</button>
+        </div>
+        <div class="ticket-card featured">
+          <h3>Standard</h3>
+          <div class="price">$149</div>
+          <p class="ticket-desc">Most popular</p>
+          <ul class="ticket-features">
+            <li>✓ Full day access</li>
+            <li>✓ All workshops</li>
+            <li>✓ Lunch included</li>
+            <li>✓ Networking events</li>
+            <li>✓ Swag bag</li>
+          </ul>
+          <button class="btn-primary">Register Now</button>
+        </div>
+        <div class="ticket-card">
+          <h3>VIP</h3>
+          <div class="price">$299</div>
+          <p class="ticket-desc">Premium experience</p>
+          <ul class="ticket-features">
+            <li>✓ Full day access</li>
+            <li>✓ All workshops</li>
+            <li>✓ Premium lunch</li>
+            <li>✓ VIP networking</li>
+            <li>✓ Swag bag</li>
+            <li>✓ 1-on-1 mentoring</li>
+          </ul>
+          <button class="btn-primary">Get VIP Pass</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: var(--spacing-2xl) 0;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    color: white;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .about {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-bg-light);
+  }
+
+  .about h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .about-card {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .about-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .about-card h3 {
+    color: var(--color-primary);
+  }
+
+  .schedule {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .schedule h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .schedule-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+  }
+
+  .schedule-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background-color: var(--color-bg-light);
+    border-radius: 0.5rem;
+    border-left: 4px solid var(--color-primary);
+  }
+
+  .time {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.1rem;
+  }
+
+  .event-details h3 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .venue {
+    padding: var(--spacing-2xl) 0;
+    background-color: var(--color-bg-light);
+  }
+
+  .venue h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .venue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .venue-info {
+    background-color: white;
+    padding: var(--spacing-lg);
+    border-radius: 0.5rem;
+  }
+
+  .amenities-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .amenities-list li {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-lg);
+    position: relative;
+    color: var(--color-text);
+  }
+
+  .amenities-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .map-placeholder {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 0.5rem;
+    padding: var(--spacing-2xl);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    min-height: 300px;
+    font-size: 2rem;
+  }
+
+  .register {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .register h2 {
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .register-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-2xl);
+  }
+
+  .ticket-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .ticket-card {
+    background-color: white;
+    border: 2px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: var(--spacing-lg);
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+  .ticket-card.featured {
+    border-color: var(--color-primary);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+    transform: scale(1.05);
+  }
+
+  .ticket-card h3 {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: var(--spacing-md) 0;
+  }
+
+  .ticket-desc {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .ticket-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: var(--spacing-lg);
+    text-align: left;
+  }
+
+  .ticket-features li {
+    padding: var(--spacing-sm) 0;
+    color: var(--color-text);
+  }
+
+  @media (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+    }
+
+    .hero-buttons button {
+      width: 100%;
+    }
+
+    .schedule-item {
+      grid-template-columns: 1fr;
+    }
+
+    .venue-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .ticket-card.featured {
+      transform: scale(1);
+    }
+  }
+</style>
